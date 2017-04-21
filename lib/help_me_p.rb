@@ -32,13 +32,19 @@ module HelpMeP
   end
 
   def pee(desired_print, method = __method__.to_s)
-    puts HelpMeP.colorize("*" * 20, HelpMeP.blue)
-    puts "CURRENTLY INSIDE METHOD" + __method__.to_s
-    puts "PRINTING OBJECT OF TYPE: #{desired_print.class.to_s}"
-    puts "*" * 20
-    puts desired_print
-    p desired_print
-    puts "*" * 20
-    puts "*" * 20
+    puts HelpMeP.colorize("*" * 50, HelpMeP.blue)
+    puts HelpMeP.colorize("START", HelpMeP.blue)
+    puts HelpMeP.colorize("*" * 50, HelpMeP.blue)
+    if !desired_print
+      puts HelpMeP.colorize("RETURNED NIL VALUE", HelpMeP.red)
+    else
+      puts HelpMeP.colorize("PRINTING OBJECT OF TYPE: #{desired_print.class.to_s}", HelpMeP.green)
+      puts "_" * 50
+      p desired_print
+      puts "_" * 50
+    end
+    puts HelpMeP.colorize("*" * 50, HelpMeP.blue)
+    puts HelpMeP.colorize("END", HelpMeP.blue)
+    puts HelpMeP.colorize("*" * 50, HelpMeP.blue)
   end
 end
