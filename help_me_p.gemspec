@@ -2,6 +2,7 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'help_me_p/version'
+require 'awesome_print'
 
 Gem::Specification.new do |spec|
   spec.name          = "help_me_p"
