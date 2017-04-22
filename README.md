@@ -18,7 +18,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Locate the object you would like to print to the console:
+
+  def index
+    @articles = Article.all
+  -->  pee(@articles)
+  end
 
 ## Development
 
