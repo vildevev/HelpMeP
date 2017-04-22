@@ -1,5 +1,5 @@
 require "help_me_p/version"
-
+require "awesome_print"
 module HelpMeP
 
   def self.colorize(string, color)
