@@ -20,10 +20,12 @@ Or install it yourself as:
 
 Locate the object you would like to print to the console:
 
+```ruby
   def index
     @articles = Article.all
   -->  pee(@articles)
   end
+  ```
 
 ## Development
 
